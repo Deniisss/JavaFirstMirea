@@ -1,38 +1,32 @@
 package ru.mirea.task2;
 
 public class Ball {
-    private String type;
-    private int size;
-
-    public Ball(String n, int a){
-        type = n;
-        size = a;
-    }
-    public Ball(String n){
-        type = n;
-        size = 0;
-    }
-    public Ball(){
-        type = "Football";
-        size = 5;
-    }
-    public void setSize(int size){
+    String type,color,size;
+    public Ball(String type, String color, String size) {
+        this.type = type;
+        this.color = color;
         this.size = size;
     }
-    public void setType(String type){
-        this.type = type;
-    }
-    public String getType(String type){
+    public String getType() {
         return type;
     }
-    public int getSize(){
+    public String getColor() {
+        return color;
+    }
+    public String getSize() {
         return size;
     }
-    public String toString(){
-        return this.type+", size "+this.size;
+    public void setType(String type) {
+        this.type = type;
     }
-    public void intoBallSize(){
-        System.out.println(type+"'s ball size is "+size);
+    public void setColor(String color) {
+        this.color = color;
     }
-
+    public void setSize(String size) {
+        this.size = size;
+    }
+    public String toString()
+    {
+        return "Тип мяча: "+getType()+", размер: "+getSize()+", цвет: "+getColor();
+    }
 }

@@ -3,9 +3,11 @@ package ru.mirea.task2;
 public class TestBook {
     public static void main(String [] args)
     {
-        Book bk1=new Book("Война и мир","Толстой",5000);
-        Book bk2=new Book("Наруто","Кисимото",3000);
-        System.out.println(bk1);
-        System.out.println(bk2);
+        Book bk=new Book("Война и мир","Толстой",8);
+        System.out.println(bk);
+        bk.setAuthor("Пушкин");
+        bk.setName("Мёртвые души");
+        bk.setRate(7);
+        System.out.println(bk);
     }
 }
