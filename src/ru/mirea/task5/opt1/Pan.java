@@ -1,6 +1,8 @@
-package ru.mirea.task5;
+package ru.mirea.task5.opt1;
 
-public class Pan extends Dish{
+import ru.mirea.task5.opt1.Dish;
+
+public class Pan extends Dish {
     public Pan(String type, String material) {
         super(type, material);
     }

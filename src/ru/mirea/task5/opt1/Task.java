@@ -1,4 +1,8 @@
-package ru.mirea.task5;
+package ru.mirea.task5.opt1;
+
+import ru.mirea.task5.opt1.Pan;
+import ru.mirea.task5.opt1.Plate;
+import ru.mirea.task5.opt1.Spoon;
 
 public class Task {
     public static void main(String[] args)
